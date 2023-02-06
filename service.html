@@ -3,26 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">      
+    <meta name="viewport" content="width=, initial-scale=1.0">        
     <title>Document</title>
+
 </head>
 <body>
     <div class="container">
         <header>
             <div class="title">
-                <h1> logo</h1>
+                <h1 id="Service"> Service</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li> <a href="contact.html" target="_self" rel="noopener noreferrer"> contact us</a></li>
+                    <li><a href="Text.html" target="_self" rel="noopener noreferrer"></a> Register</li>
+                    <li><a href="me.html" target="_self" rel="noopener noreferrer"></a> About us</li>
 
                 </ul>
             </nav>
         </header>
+        <section>
+
+            <h1 id="greet">Hello</h1>
+            <button onclick="getname();">enter your name</button><br>
+            <button id="changecolor"onclick="setcolor();">click here</button><br>
+            <h1>this is my contect</h1>
+            <p>this is my paragrah</p>
+
+            
+        </section>
 
     </div>
+    <script>
+        function getname() {
+            const name= prompt("Enter your name");
+            document.getElementById("greet").innerHTML='Hello'  +name;
+            
+        };
+
+        function setcolor() {
+            document.getElementById("Service").style.color ="green";
+            
+        };
+
+
+
+
+
+
+
+
+    </script>
+
     
 </body>
 </html>

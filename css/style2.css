@@ -1,0 +1,367 @@
+.hero-spot{
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: relative;
+    padding: 40px 0px 0px;
+    overflow: hidden
+}
+
+body{
+
+box-sizing: border-box;
+color: #333;
+line-height: 4.1;
+font-size: 14px;
+display: block;
+vertical-align: baseline;
+
+}
+
+#hero-spot h1{
+
+    color: #fff;
+    max-width: 830px;
+    margin-top: 50px;
+}
+.help-link{
+position: absolute;
+top: 20px;
+right: 20px;
+background-color: #333;
+color: #bbb;
+padding: 5px 10px;
+border-radius: 4px;
+font-size: 12px;
+font-weight: bold;
+}
+.video{
+    text-align: center;
+    background-color: white;
+    display: block;
+
+}
+
+.tutorial{
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+
+}
+
+#tutorial{
+
+    padding-bottom: 20px;
+}
+
+.tutorial-list.active{
+    display: block;
+}
+
+.tutorial-list{
+    margin-top: 90px;
+    counter-reset:tutorialstep;
+}
+
+.wrapper{
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+
+h2{
+
+    text-align: center;
+    font-weight: 200;
+    line-height: 38px;
+    margin: 20px auto 0px;
+    font-size: 21px;
+    max-width:740px ;
+}
+
+h1{
+
+    margin: 90px auto 0 auto;
+    font-size: 48px;
+    font-weight: 200px;
+    line-height: 60px;
+    text-align: center;
+    max-width: 910px;
+    color: #333;
+}
+.tabs{
+    display: inline-block;
+    margin: 45px auto 0;
+    font: size 20px;
+
+}
+
+li{
+    list-style: none;
+}
+
+.tabs li :first-child a{
+
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.tabs a.selected{
+    z-index: 20px;
+    color: white;
+    background-color:#3275C7;
+    border-color:#3275C7;
+    outline: none;
+    padding: 10px;
+    padding-left: 20px;
+    
+    
+}
+
+.tabs li {
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid #DDDDDD;
+    position: relative;
+    line-height: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tabs a{
+    color: #323232;
+    background-color: #fff;
+    display:inline-block;
+    padding: 10px 20px;
+    line-height: 1em;
+
+}
+#create-repo-step{
+    background-color: #fff; 
+    background-size: 446px 328px;
+}
+
+.tutorial-list .image-right{
+    padding-right: 440px;
+}
+
+.tutorial-list>li{
+   position: relative; 
+   margin: 0 0 70px 0px;
+   padding: 40px 0 60px;
+   font-size: 18px;
+   border: 1px solid #ddd;
+   border-radius: 15px;
+   text-align: center;
+   z-index: 1;
+   transform: all 0.6s ease-in-out 0s;
+
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1em;
+
+}
+
+.tutorial-list .image-right p{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.tutorial-list p{
+    margin: 30px 120px 30px;
+
+}
+
+p{
+    font-weight: 300px;
+    line-height: 1.7em;
+}
+.details{
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+
+.tutorial-list>li:not(.question):after{
+
+    counter-increment: tutorialstep;
+    content: counter(tutorialstep);
+}
+
+
+.tutorial-list .question:afte{
+
+    content: "?";
+}
+
+
+.tutorial-list>li:after{
+
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    background-color: #3275C7;
+    border-radius: 200px;
+    font-size: 200px;
+    font-weight: 300px;
+    color: #fff;
+    position: absolute;
+    left: -5px;
+    top: -15px;
+    text-align: center;
+    z-index: 100;
+}
+
+.Question .tabs{
+
+    margin: 30PX auto 0;
+}
+
+.terminal{
+
+    width: 700px;
+    margin: 30PX auto 0;
+}
+
+div{
+    display: block;
+}
+
+.header{
+    height: 25px;
+    display: block;
+    border: 1px solid #9c9c9c;
+    border-bottom-color: #111;
+    border-top-left-radius:7px ;
+    border-top-right-radius: 7px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;
+    text-shadow: 0px rgb(255, 255, 255/ 60%);
+    color:#444;
+    background: -webkit-linear-gradient(top, #f7f7f7 0%, #cfcfcf 5%, #aaa 100%);
+}
+
+.shell{
+    font-size: 17px;
+    line-height: 28px;
+    color: #eeeb82;
+    background-color: black;
+    overflow: hidden;
+    padding: 20px;
+    margin: 0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: left;
+    display:block ;
+}
+
+.hero-octicon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    margin: 0 auto 15px;
+    display: block;
+
+}
+
+.mega-octicon  {
+
+    font: normal normal 48px octicons;
+    display: inline-block;
+    -webkit-font-smoothing:antialiased;
+    color: #4183c4;
+    line-height: 100px;
+
+}
+
+.octicon-check:before{
+content:'\f03a' ;
+
+
+}
+
+.tutorial-list>li:not(.question):after{
+
+    counter-increment:tutorialstep;
+    content: counter(tutorialstep);
+}
+
+.next-steps li:last-child {
+padding-left: 0;
+padding-right: 0;
+
+}
+
+.next-steps li {
+
+    display: table-cell;
+    text-align: center;
+    padding: 0 20px 0;
+}
+
+.next-steps .hero-octicon {
+
+    margin-bottom: 30px;
+}
+
+a {
+color: #4183c4;
+text-decoration: none;
+
+}
+a:-webkit-any-link {
+
+    cursor: pointer;
+}
+
+.next-steps .custom-urls {
+transition-delay: 0.15s;
+
+}
+
+
+.next-steps p{
+
+    font-weight: 400;
+}
+p {
+
+    margin: 15px 0 30px;
+    line-height: 1.7em;
+}
+
+footer{
+
+    position: relative;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #777;
+    clear: both;
+    width: 980px;
+    padding: 40px 0;
+    margin: 70px auto 0 auto;
+    border-color: 1px solid #eee;
+}
+
+
+footer .right{
+float: right;
+margin: 0;
+
+}
+
+.site-footer-links li{
+
+    display: inline-block;
+    margin-left: 10px;
+}
