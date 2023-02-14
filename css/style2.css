@@ -1,22 +1,29 @@
 .hero-spot{
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: #333;
     position: relative;
     padding: 40px 0px 0px;
     overflow: hidden
 }
 
+.logo{
+color: #cfcfcf;
+font-size: 30px;
+
+}
+
 body{
 
 box-sizing: border-box;
-color: #333;
+color:#333;
 line-height: 4.1;
 font-size: 14px;
 display: block;
 vertical-align: baseline;
 
 }
+
 
 #hero-spot h1{
 
@@ -54,6 +61,7 @@ font-weight: bold;
 #tutorial{
 
     padding-bottom: 20px;
+    padding: 20px;
 }
 
 .tutorial-list.active{
@@ -95,6 +103,7 @@ h1{
     display: inline-block;
     margin: 45px auto 0;
     font: size 20px;
+    padding: 50px;
 
 }
 
@@ -121,7 +130,6 @@ li{
 }
 
 .tabs li {
-    padding: 10px 20px;
     display: inline-block;
     border: 1px solid #DDDDDD;
     position: relative;
@@ -189,16 +197,16 @@ p{
 }
 
 
-.tutorial-list>li:not(.question):after{
+.tutorial-list>li.question:after{
 
     counter-increment: tutorialstep;
     content: counter(tutorialstep);
 }
 
 
-.tutorial-list .question:afte{
+.question:after{
 
-    content: "?";
+ content:"?"
 }
 
 
@@ -206,11 +214,9 @@ p{
 
     width: 58px;
     height: 58px;
-    line-height: 58px;
     background-color: #3275C7;
     border-radius: 200px;
-    font-size: 200px;
-    font-weight: 300px;
+    font-size: 15px;
     color: #fff;
     position: absolute;
     left: -5px;
@@ -274,21 +280,24 @@ div{
 
 }
 
-.mega-octicon  {
+.mega-octicon {
 
     font: normal normal 48px octicons;
     display: inline-block;
     -webkit-font-smoothing:antialiased;
     color: #4183c4;
     line-height: 100px;
+}
+
+
+/* .octicon-book:before{ */
+/* content:icon;
 
 }
 
-.octicon-check:before{
-content:'\f03a' ;
+.octicon-link:before{
+content:icon */
 
-
-}
 
 .tutorial-list>li:not(.question):after{
 
@@ -329,6 +338,13 @@ transition-delay: 0.15s;
 
 }
 
+.main{
+position: absolute;
+margin-left: 240px;
+margin-top: -300px;
+    
+}
+
 
 .next-steps p{
 
@@ -352,6 +368,7 @@ footer{
     margin: 70px auto 0 auto;
     border-color: 1px solid #eee;
 }
+
 
 
 footer .right{

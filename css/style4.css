@@ -1,0 +1,36 @@
+.nav{
+   background-color: lightgreen;
+   height: 120px;
+}
+.nav a{
+   display: inline;
+   margin-left: 20px;
+   text-decoration: none;
+   color: black
+
+}
+.drop-down{
+
+   background-color: brown;
+   width: 0%;
+}
+.drop-down [type='button']{
+   margin-left: 280px;
+   color:black;
+background-color: blueviolet;
+}
+.drop-down-content{
+      margin-left: 290px;
+      display: none;
+}
+    .drop-down-content a{
+      display: block;
+      line-height: 1.5;
+      color: green;
+     
+    }
+    .drop-down:hover .drop-down-content{
+      display: block;
+    }
+ 
+ 
